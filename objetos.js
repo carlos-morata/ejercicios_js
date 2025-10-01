@@ -108,13 +108,13 @@ console.log(obj1 === obj2)
 // Crea un objeto `coche` con propiedades: `marca`, `modelo`, `año`.
 // * Añade un método que devuelva la frase `"Mi coche es un [marca] [modelo]"`.
 
-let coche = {
-    marca: "Peugeot",
-    modelo: "208",
-    ano: "2024"
-}
+// let coche = {
+//     marca: "Peugeot",
+//     modelo: "208",
+//     ano: "2024"
+// }
 
-console.log(`Mi coche es un ${coche.marca} ${coche.modelo}`)
+// console.log(`Mi coche es un ${coche.marca} ${coche.modelo}`)
 
 // ### Ejercicio 2
 // Dado el objeto:
@@ -192,3 +192,37 @@ for(let nombre of usuarios) {
     }
 }
 console.log(mayores)
+
+    // Spread operator { ...obj }
+
+    const coche = {
+        marca: "Peugeot",
+        modelo: "208"
+    }
+    coche.year = 2000
+    console.log(coche)
+
+    const coche2 = {...coche}
+    console.log(coche2)
+
+    const array = ["hola", "adios"]
+    console.log(array)
+    const array2 = [...array, "muy buenas"]
+    console.log(array2)
+
+// Funciones
+function suma (a, b) {
+    return a + b
+    //return {              En las funciones sólo puede tener una salida, 
+    // resultado: a + b,    si necesitamos pasar más de un dato podemos crear un objeto
+    // numero1: a,
+    // numero2: b
+    // }
+}
+console.log(suma(4, 5))
+
+// Arrow Function
+const suma2 = (a, b) => {
+    return a + b
+}
+console.log(suma2(5, 4))
